@@ -1,0 +1,163 @@
+* {
+    margin: 0;
+    padding: 0;
+    outline: 0;
+}
+
+body {
+    font-family: Arial;
+    padding: 30px;
+    background: #e7e7e7;
+}
+  
+header {
+    /* display: flex; */
+    /* flex-direction: row; */
+    background: purple;
+    border-radius: 20px;
+    padding: 20px;
+    max-height: 120px;
+    /* justify-content: space-between; */
+    }
+
+ header .logo {
+    /* display: flex; */
+    border-radius: 50px;
+    max-width: 100px;
+     
+  }
+
+  header .title {
+    font-size: 30px;
+    color:seashell;
+    align-self: center; 
+    
+  }
+
+
+/* header .menu a:hover {
+    background-color: #222;
+    color: #fff;
+} */
+
+Nav {
+  /* color: lightsalmon; */
+  display: flex !important;
+  flex-direction: row;
+  background: purple;
+  border-radius: 20px;
+  padding: 15px;
+  max-height: 120px;
+  justify-content: space-between !important;
+  font-size: 30px;
+  /* color:seashell; */
+ }
+
+
+  main{
+    /* display: flex; */
+    background-color: lightsalmon;
+    padding: 30px;
+    border-radius: 20px;
+    /* justify-content: space-evenly; */
+}
+
+
+main .NAV{
+  justify-content: space-between;
+}
+
+main .InputGroup{
+/* display: flex; */
+border-radius: 20px;
+/* flex-direction: column; */
+width: 300px;
+background-color: powderblue;
+padding: 20px;
+}
+
+ /* main .login{
+  display: flex;
+  border-radius: 20px;
+  flex-direction: column;
+  width: 300px;
+  background-color: powderblue;
+  padding: 20px;
+  } */
+
+/* input{
+display: flex;
+outline: 0;
+border: thin solid #033468;
+padding: 3px 10px;
+border-radius: 14px;
+margin-top: 0px;
+}
+*/
+
+
+main .banner{
+    overflow: hidden;
+    display: flex;
+    border-radius: 50px;
+    justify-content: center !important;
+}
+
+
+footer{
+color: white;
+background-color: grey;
+border-radius: 20px;
+text-align: center;
+padding: 20px;
+margin-top: 20px;
+font-weight: bold;
+}
+
+
+main .list_user table {
+    background-color: beige;
+    width: max-content;
+    margin: 20px 10%;
+    border: 3px solid black;
+    padding: 5px
+}
+
+main .list_user th {
+  background-color: rgb(243, 243, 147);
+  padding:5px;
+}
+
+main .list_user td {
+  padding:5px;
+}
+/* 
+Button {
+  margin-top: 40px;
+  justify-content: center;
+
+  } */
+    /* 
+      cursor: pointer;
+      color: #fff;
+      background-color: #033468;
+      display: inline-block;
+      font-weight: 400;
+      text-align: center;
+      white-space: nowrap;
+      vertical-align: middle;
+      user-select: none;
+      border: 1px solid transparent;
+      border-radius: 5px;
+      padding: 0.375rem 0.75rem;
+      font-size: 1rem;
+      line-height: 1.5;
+
+      
+    }
+    button[disabled]{
+      border: 1px solid #999999;
+      background-color: #cccccc;
+      color: #666666; */
+    /* } */
+   
