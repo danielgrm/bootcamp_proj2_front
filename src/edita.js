@@ -37,7 +37,7 @@ const voltapralista = () => {
 //window.onload = getbyid()
 useEffect(() => {
   getbyid()
-},[])
+})
 
 return (
   <div>

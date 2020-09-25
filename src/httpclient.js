@@ -31,18 +31,16 @@ const interceptor = httpClient.interceptors.response.use(
         //  }
 
         switch (status) {
-            case 400:
-               alert("Usuario nao existe")
-
-                break;
             case 404:
-                alert("Senha invalida")
-
+               alert("Usuario nao existe")
                 break;
-            // default:
-            //     console.log(status, `Aconteceu um erro ${status}`)
-            //     break;
-        }
+            case 400:
+                alert("Senha invalida")
+                break;
+            default:
+                console.log(status, `Aconteceu um erro ${status}`)
+                break;
+             }
         httpClient.interceptors.response.eject(interceptor);
         return Promise.reject(error);
     }

@@ -11,7 +11,7 @@ const Header = (props) => {
             <Row>
         <Col><img className="logo" src={imgmarvin} alt=""></img></Col>
         <Col className="title"> Projekt_Kino</Col>
-        <Col className="title" xs="auto"> <i class="fab fa-angellist"></i> Coolest movies ever</Col>
+        <Col className="title" xs="auto"> <i className="fab fa-angellist"></i> Coolest movies ever</Col>
         {/* <Col><i className="fa fa-sign-out"></i></Col> */}
         </Row>
      
