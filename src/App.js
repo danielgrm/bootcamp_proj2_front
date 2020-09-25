@@ -1,5 +1,5 @@
 import React from 'react'
-import imgbanner from './kino-1.jpg'
+//import imgbanner from './kino-1.jpg'
 import Header from './header'
 import Routercomponent from './routes'
 import Footer from './footer'

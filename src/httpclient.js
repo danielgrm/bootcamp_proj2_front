@@ -4,7 +4,8 @@ import axios from 'axios';
 //import {getToken} from './login'
 
 const httpClient = axios.create({
-    baseURL: `http://localhost:3002`,
+    // baseURL: `http://localhost:3002`,
+    baseURL: `https://nameless-plateau-96589.herokuapp.com/`
     // headers: {
     //     'Content-Type': 'application/json'
     // }
@@ -25,9 +26,9 @@ const interceptor = httpClient.interceptors.response.use(
         // Error
         const { response: { status } } = error;
 
-         if (error.message === 'Network Error' && !error.response) {
-             alert('você está sem internet')
-         }
+        //  if (error.message === 'Network Error' && !error.response) {
+        //      alert('você está sem internet')
+        //  }
 
         switch (status) {
             case 400:

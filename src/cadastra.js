@@ -1,6 +1,6 @@
 import React, {useState} from 'react'
 import {useHistory} from 'react-router-dom'
-import { Row, Col, InputGroup, InputGroupText, InputGroupAddon, Button, Input } from 'reactstrap';
+import { InputGroup, InputGroupText, InputGroupAddon, Button, Input } from 'reactstrap';
 import httpClient from './httpclient'
 
 const Cadastra = () => {  
@@ -15,7 +15,7 @@ const handleChange = (event) => {
   return;
 }
 const submete = async () => {
-    await httpClient.post('http://localhost:3002/user',  form )
+    await httpClient.post('/user',  form )
     setform({})
     alert("Dados enviados")
   }
@@ -26,7 +26,7 @@ return(
                <div className="NAV">
 
               
-               <Button className="button" outline color="primary" onClick={()=>submete}> Envia </Button>
+               <Button className="button" outline color="primary" onClick={()=>submete()}> Envia </Button>
             
 
              

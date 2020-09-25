@@ -9,7 +9,7 @@ import { Table, Button } from 'reactstrap'
    const history = useHistory()
         const getList = async () => {
             try {
-                const users = await httpClient.get('http://localhost:3002/user')
+                const users = await httpClient.get('/user')
                 setUsers(users.data)
                 console.log(users)
             } catch (error) {
@@ -42,7 +42,7 @@ import { Table, Button } from 'reactstrap'
        const deleteUser = async (titulo) => {
             try{
                if (window.confirm('Está certo disso?'))
-                await httpClient.delete(`http://localhost:3002/user/${titulo}`, {titulo})
+                await httpClient.delete(`/user/${titulo}`, {titulo})
                getList()
            }catch (err){
             console.log (err)

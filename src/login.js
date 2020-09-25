@@ -28,7 +28,7 @@ const Login = (props) => {
 
     const saveToken = (token) => localStorage.setItem(TOKEN_KEY, token)
 
-    const removeToken = () => localStorage.removeItem(TOKEN_KEY)
+    //const removeToken = () => localStorage.removeItem(TOKEN_KEY)
 
     
     // const isAuthenticated = () => {

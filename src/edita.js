@@ -16,12 +16,12 @@ import { InputGroup, InputGroupAddon, Button, Input } from 'reactstrap';
   return;
 }
 const submete = async () => {
-  await httpClient.patch(`http://localhost:3002/user/${id}`, form)
+  await httpClient.patch(`/user/${id}`, form)
   setform({})
   alert("Dados enviados")
   history.push(`/geralista/`)
 }
-  const pegala = (id) => httpClient.get(`http://localhost:3002/user/${id}`)
+  const pegala = (id) => httpClient.get(`/user/${id}`)
   const getbyid = async () => {
     try {
       const user = await pegala(id)

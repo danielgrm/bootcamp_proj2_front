@@ -1,7 +1,7 @@
 import React from "react"
 import imgmarvin from './marvinpistola.png'
 import './css.css'
-import { Container, Row, Col } from 'reactstrap';
+import { Row, Col } from 'reactstrap';
 
 
 const Header = (props) => {
